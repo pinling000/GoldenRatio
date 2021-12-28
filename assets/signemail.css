@@ -1,0 +1,249 @@
+body{
+    background-color: #ffefa9;
+    font-family:Comic Sans MS;
+}
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 100;
+    margin-left: -125px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    font-size: 22px;
+    margin-right: 100px;
+    font-family:"Comic sans MS", cursive ,sans-serif;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #904E0E;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin: 0px 5px;
+}
+
+header ul li a:hover{
+    background-color: #FFBF6C;
+    color: #FFF7D5;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.frame{
+    box-shadow: 2px 2px 2px 3px rgba(187, 180, 180, 0.616);
+    background-color: #ffeb92d2;
+    padding: 35px 60px;
+}
+
+.item{
+    padding: 50px 100px;
+}
+
+.item img{
+    position: relative;
+    width: 500px;
+    margin-top: 300px;
+}
+
+
+.title{
+    padding: 25px 0;
+    font-size: 30px;
+    font-style: oblique ;
+    text-align: center;
+    color: #BD7B00;
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.root{
+    display: flex;
+
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_field{
+    max-width: 380px;
+    height: 55px;
+    background-color: #baedffc7;
+    border-radius: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.input_field i{
+    margin: 25px;
+    color: #5aafcd;
+}
+
+.input_field input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.gender i{
+    margin: 25px 5px;
+}
+
+.male,.female{
+    padding: 0 25px;
+}
+
+.date{
+    width: 180px;
+    padding: 0 95px 0 25px;
+}
+
+#btn{
+    width: 150px;
+    height: 49px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #575a89;
+    color: antiquewhite;
+    font-weight: 600;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+#btn:hover{
+    background-color: #575a89b3;
+    transition: .5s;
+}
+
+.footer{
+    text-align: center;
+}
+
+a,a:link,a:visited{
+    color:#904E0E;
+    text-decoration: none
+}
+
+.magic:hover{
+    background: #FFC14F;
+}
+
+#check{
+    font-size: 20px;
+    font-family: "標楷體";
+    color: rgba(255, 64, 64, 0.87);
+
+}
+
+.btn{
+    width: 150px;
+    height: 49px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #575a89;
+    color: antiquewhite;
+    font-weight: 600;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.item .login{
+    position: absolute;
+    z-index: 2;
+    width: 170px;
+    height: 90px;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-top: -625px;
+    margin-left: 330px;
+    background-color: #3f3d56bf;
+}
+
+.item .login:hover{
+    background-color: #285632b8;
+    transition: .3s;
+}
+
+.item .fb{
+    position: absolute;
+    width: 100px;
+    height: 55px;
+    margin-top: -410px;
+    margin-left: 265px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #f7b64e;
+}
+
+.item .fb:hover{
+    background-color: #ff9e034d;
+    color: #a0616a;
+    transition: .2s;
+}
+
+.item .ins{
+    position: absolute;
+    width: 130px;
+    height: 90px;
+    margin-top: -480px;
+    margin-left: 45px;
+    border-radius: 5px;
+    font-size: 22px;
+    background-color: #f7b64e;
+}
+
+.item .ins:hover{
+    background-color: #ff9e034d;
+    color: #a0616a;
+    transition: .2s;
+}
+
+.item .google{
+    position: absolute;
+    width: 75px;
+    height: 60px;
+    margin-top: -565px;
+    margin-left: 200px;
+    border-radius: 5px;
+    background-color: #f7b64e;
+}
+
+.item .google:hover{
+    background-color: #ff9e034d;
+    color: #a0616a;
+    transition: .2s;
+}
