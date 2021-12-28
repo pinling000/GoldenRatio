@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/shopping_cart2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <script>
+        window.onload=function(){
+            var liCheck=document.getElementsByName("liCheck");
+            var decrease=document.getElementsByClassName("decrease");
+            var count=document.getElementsByClassName("count");
+            var increase=document.getElementsByClassName("increase");
+            var price=document.getElementsByClassName("price");
+            var subTotal=document.getElementsByClassName("subTotal");
+            var checkAll=document.getElementById("checkAll");
+            
+
+
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <ul>
+                <li><a class="home" href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">PRODUCTS</a></li>
+                <li><a href="">MEMBER</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="shopping_cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="cart">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Product</th>
+                    <th>Quatity</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="liCheck" id="" value="">
+                    </td>
+                    <td>
+                        <div class="infor">
+                            <img src="image/test-1.jpg" alt="">
+                            <div>
+                                <h4>product1</h4>
+                                <p>price:$ <span class="price">50</span></p>
+                            </div>
+                        </div>                       
+                    </td>
+                    <td>
+                        <div>
+                            <button type="button" class="decrease" disabled="disabled">-</button>
+                            <input class="count" id="number" type="number" value="1">
+                            <button type="button" class="increase">+</button>
+                        </div>
+                    </td>
+                    <td class="subTotal">NT$ 50</td>
+                    <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="liCheck" id="" value="">
+                    </td>
+                    <td>
+                        <div class="infor">
+                            <img src="image/test-2.JPG" alt="">
+                            <div>
+                                <h4>product1</h4>
+                                <p>price:NT$ 45</p>
+                            </div>
+                        </div>                       
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>NT$ 45</td>
+                    <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="liCheck" id="check" value="">
+                    </td>
+                    <td>
+                        <div class="infor">
+                            <img src="image/test-3.JPG" alt="">
+                            <div>
+                                <h4>product1</h4>
+                                <p>price:NT$ 40</p>
+                            </div>
+                        </div>                       
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>NT$ 40</td>
+                    <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                </tr>
+                 
+            </table>
+            <hr>
+
+            <div class="total">
+                <table>
+                   <tr>
+                        <td>
+                            <input type="checkbox" name="liCheck" id="checkAll" value="">
+                        </td>
+                        <td></td>
+                        <td>total:</td>
+                        <td>total:</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2021 Golden ratio</p>
+        <p><a href="contact.html">Contact Us</a>| Tel:+886-3-235-5401</p>
+    </footer>
+</body>
+</html>
