@@ -22,6 +22,7 @@ nav ul{
     list-style: none;
     display: inline-block;
     font-size: 20px;
+    margin-top: 40px;
 }
 
 nav li{
@@ -96,6 +97,7 @@ section .products{
     padding: 15px;
     margin: 0 30px;
     width: 30%;
+    border-radius: 20PX;
 }
 
 .column:hover{
@@ -106,6 +108,15 @@ section .products{
 .column img{
     width: 200px;
     height: 200px;
+}
+
+.column p{
+    margin: 6px;
+}
+
+.column button{
+    width: 200px;
+    height: 35px;
 }
 
 footer{
