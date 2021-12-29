@@ -5,28 +5,34 @@ body{
 }
 
 header{
-    display: flex;
-    align-items: center;
-    margin: 25px 225px;
-    width: 75%;
+    background-color: #FFD382;
+    padding: 1px;
 }
 
 nav{
-    flex: 1;
-    text-align: right;
+    margin: 25px 225px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
-header ul{
+nav img{
+    width: 250px;
+}
+
+nav ul{
     list-style: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 17px;
 }
 
-header li{
+nav li{
     display: inline-block;
 }
 
-header ul li a{
+nav ul li a{
     text-decoration: none;
     color: #073B58;
     border-radius: 20px;
@@ -34,13 +40,17 @@ header ul li a{
     margin: 0px 5px;
 }
 
-header ul li a:hover{
+nav ul li a:hover {
     background-color: #FFBF6C;
     color: #FFF7D5;
 }
 
 section{
    margin: 10px 250px;
+}
+
+.cart{
+    margin-top: 30px;
 }
 
 table{
