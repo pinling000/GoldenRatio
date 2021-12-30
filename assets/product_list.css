@@ -66,7 +66,10 @@ section ul{
     list-style: none;
     width: 100%;
     font-size: 20px;
-    
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    padding-bottom: 45px;
 }
 
 ul a{
@@ -79,7 +82,6 @@ ul a:hover{
 }
 
 section .products{
-    margin-left: 85px;
     width: 100%;
 }
 
@@ -117,6 +119,9 @@ section .products{
 .column button{
     width: 200px;
     height: 35px;
+    background-color: #FFD382;
+    border-color: #904E0E;
+    color: #904E0E;
 }
 
 footer{
