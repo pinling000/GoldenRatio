@@ -1,3 +1,7 @@
+* {
+    box-sizing:border-box
+}
+
 body{
     margin: 0;
     background-color: #ffefa9;
@@ -6,11 +10,11 @@ body{
 
 header{
     background-color: #FFD382;
-    padding: 1%;
+    padding: 1px;
 }
 
 nav{
-    margin: 25px 225px;
+    margin: 8px 200px;
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -18,10 +22,14 @@ nav{
     
 }
 
+nav img{
+    width: 250px;
+}
+
 nav ul{
     list-style: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 nav li{
@@ -46,43 +54,108 @@ nav ul li a:hover {
     color: #FFF7D5;
 }
 
-.rank{
-    text-align: center;
+.slideWindow{
+    margin-top: 20px;
 }
 
-.ranking{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+  /* Hide the images by default */
+  .slides {
+    display: none;
+  }
+
+  .slides img{
+      width: 100%;
+      height: 600px;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active{
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.rank{
+    margin: 15px 225px;
+    border: 3px #FFD382 dashed;
+}
+
+.rank h1{
+    text-align: center;
 }
 
 .product{
-    background-color: #FFF7D5;
-    margin: 10px 15px;
-    width: 300px;
-    height: 450px;
-    text-align: center;
+    display: flex;
+    background-color: #FFD382;
+    margin: 10px 50px;
     border-radius: 20px;
-    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.651);
+    padding: 20px;
 }
 
 .product img{
-    width: 250px;
-    height: 250px;
+    width: 400px;
+}
+
+.second{
+    justify-content: flex-end;
+}
+
+footer{
+    text-align: center;
+    color:#904E0E;
+    font-size: 12px;
+    background: #FFD382;
     padding: 15px;
-}
-
-.second, .third{
-    height: 400px;
-    margin-bottom: 25px;
-}
-
-.second img, .third img{
-    width: 225px;
-    height: 225px;
-}
-
-.addCartBox{
-    display: flex;
-    justify-content: space-around;
 }

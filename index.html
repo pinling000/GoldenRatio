@@ -9,44 +9,107 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
-    <link rel="stylesheet" href="assets/product_list.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <header>
+        <nav>
+            <img src="image/logo.png" alt="">
+            <ul>
+                <li><a class="choose" href="index.html">HOME</a></li>
+                <li class="about"><a href="">ABOUT</a></li>
+                <li><a href="AllProducts.html">PRODUCTS</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href=""><i class="fas fa-user"></i></a></li>
+                <li><a href="shopping_cart2.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section>
         <div class="slideWindow">
-
-        </div>
-
-        <div class="rank">
-            <h1>人氣飲品</h1>
-            <div class="ranking">
-                <div class="product second">
-                    <img src="image/test-1.jpg" alt="">
-                    <h3>product</h3>
-                    <div class="addCartBox">
-                        <p>NT$50</p>
-                        <button class="addCart">Add</button>
-                    </div>
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <img src="image/drinks1.jpg">
                 </div>
-                <div class="product first">
-                    <img src="image/test-1.jpg" alt="">
-                    <h3>product</h3>
-                    <div class="addCartBox">
-                        <p>NT$50</p>
-                        <button class="addCart">Add</button>
-                    </div>
+                  
+                <div class="slides fade">
+                    <img src="image/drinks2.jpg">
                 </div>
-                <div class="product third">
-                    <img src="image/test-1.jpg" alt="">
-                    <h3>product</h3>
-                    <div class="addCartBox">
-                        <p>NT$50</p>
-                        <button class="addCart">Add</button>
-                    </div>
+                  
+                <div class="slides fade">
+                    <img src="image/drinks3.jpg">
                 </div>
             </div>
+                  
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                  
+            </div>
+    
+            <script>
+                var slideIndex = 0;
+                showSlides();
+    
+                function showSlides(){
+                    var i;
+                    var slides = document.getElementsByClassName("slides");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+    
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }
+    
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+    
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 3000); 
+                }
+            </script>
+        </div>
+        
+
+        <div class="rank">
+            <h1>人氣排行</h1>
+            <div class="product">
+                <img src="image/passionfruit.png" alt="">
+                <div class="intro">
+                    <h3>product</h3>
+                    <p>introduce</p>
+                </div>
+            </div>
+
+            <div class="product second">
+                <div class="intro">
+                    <h3>product</h3>
+                    <p>introduce</p>
+                </div>
+                <img src="image/passionfruit.png" alt="">
+            </div>
+
+            <div class="product">
+                <img src="image/passionfruit.png" alt="">
+                <div class="intro">
+                    <h3>product</h3>
+                    <p>introduce</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
+    <footer>
+        <p>服務時間:周一至周五A.M.10:00~P.M.21:30</p>
+        <p>電話:886-3-235-5401</p>
+        <p>地址:320314 桃園市中壢區中北路200號 </p>
+        <p>Copyright © 2021 Golden ratio</p>
+        <p><a href="contact.html">Contact Us</a></p>
+    </footer>
 </body>
 </html>
