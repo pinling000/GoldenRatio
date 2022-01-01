@@ -2,15 +2,15 @@ body{
     margin: 0;
     background-color: #ffefa9;
     font-family:"Comic sans MS", cursive ,sans-serif;
+    font-family: "黑體";
 }
 
 header{
     background-color: #FFD382;
-    padding: 1%;
 }
 
 nav{
-    margin: 25px 225px;
+    margin: 0px 225px;
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -18,11 +18,14 @@ nav{
     
 }
 
+nav img{
+    width: 180px;
+}
+
 nav ul{
     list-style: none;
     display: inline-block;
-    font-size: 20px;
-    margin-top: 40px;
+    font-size: 17px;
 }
 
 nav li{
@@ -129,5 +132,5 @@ footer{
     color:#904E0E;
     font-size: 12px;
     background: #FFD382;
-    padding: 15px;
+    padding: 1px;
 }

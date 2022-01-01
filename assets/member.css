@@ -171,3 +171,11 @@ dl{
     text-align: end;
     margin-right: 25px;
 }
+
+footer{
+    text-align: center;
+    color:#904E0E;
+    font-size: 12px;
+    background: #FFD382;
+    padding: 1px;
+}
