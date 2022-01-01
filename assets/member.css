@@ -2,15 +2,15 @@ body{
     margin: 0;
     background-color: #ffefa9;
     font-family:"Comic sans MS", cursive ,sans-serif;
+    font-family: "黑體";
 }
 
 header{
     background-color: #FFD382;
-    padding: 1px;
 }
 
 nav{
-    margin: 25px 225px;
+    margin: 0px 225px;
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -19,7 +19,7 @@ nav{
 }
 
 nav img{
-    width: 250px;
+    width: 180px;
 }
 
 nav ul{
@@ -43,4 +43,131 @@ nav ul li a{
 nav ul li a:hover {
     background-color: #FFBF6C;
     color: #FFF7D5;
+}
+
+section{
+    margin: 15px 225px;
+}
+
+.frame{
+    border: 3px #FFBF6C dashed;
+    margin: 15px 0;
+}
+
+.content{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    margin: 0;
+    padding: 20px;
+    border-bottom: 3px dotted #ff9d1f;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+
+dl{
+    margin: 15px;
+}
+
+.formfield{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.formfield dt{
+    width: 100px;
+}
+
+.formfield input{
+    font-size: 18px;
+    border-radius: 3px;
+    border-color: #e1eef5;
+    height: 30px;
+}
+
+.gender{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.address{
+    padding: 30px 0;
+}
+
+.address input,
+.mail input{
+    width: 166vh;
+    max-width: 790px;
+}
+
+.modify{
+    cursor: pointer;
+    width: 200px;
+    height: 35px;
+    background-color: #ffcb6bc7;
+    border-color: #904E0E;
+    color: #904E0E;
+}
+
+.order{
+    margin:20px;
+}
+
+.record{
+    margin: 0 30px;
+}
+
+.accordion {
+    background-color: #ffd279;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+  
+.active, .accordion:hover {
+    background-color: #ffde8e;
+    transition: .5s;
+}
+  
+.panel {
+    padding: 0 18px;
+    background-color: #ffffffc7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin: 0 18px;
+}
+
+.title, .beverage{
+    display: flex;
+    justify-content: space-between;
+}
+
+.beverage{
+    margin: 0 15px;
+    border: 1px solid #808080a6;
+    padding: 5px 10px;
+}
+
+.total{
+    text-align: end;
+    margin-right: 25px;
 }

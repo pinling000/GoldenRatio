@@ -24,31 +24,151 @@
     </header>
 
     <section>
-        <div>
-            <h2>會員資料</h2>
-            <div>
-                <h3>姓名</h3>
-                <input type="text">
-            </div>
-            <div>
-                <h3>生日</h3>
-                <input type="text">
-            </div>
-            <div>
-                <h3>電話</h3>
+        <div class="frame">
+            <div class="content">
+                <h2>會員資料</h2>
+                <dl>
+                    <div class="item">
+                        <div class="formfield name">
+                            <dt>姓名</dt>
+                            <dd>
+                                <input type="text" value="CYIM" readonly>
+                            </dd>
+                        </div>
 
-            </div>
-            <div>
-                <h3>電子郵件</h3>
-            </div>
-            <div>
+                         <div class="formfield birth">
+                            <dt>生日</dt>
+                            <dd>
+                                <input type="text" value="2022/01/01" readonly>
+                            </dd>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                       <div class="formfield">
+                            <dt>性別</dt>
+                            <dd class="gender">
+                                <input type="radio" name="gender" value="man" checked>生理男
 
+                                <input type="radio" name="gender" value="woman">生理女
+                            </dd>
+                        </div>
+
+                        <div class="formfield tele">
+                            <dt>電話</dt>
+                            <dd>
+                                <input type="text" value="886-3-235-5401" readonly>
+                            </dd>
+                        </div>
+                    </div>
+
+                    <div class="formfield mail">
+                        <dt>電子郵件</dt>
+                        <dd>
+                            <input type="text" value="cyim@gmail.com" readonly>
+                        </dd>
+                    </div>
+
+                    
+                    <div class="formfield address">
+                        <dt>地址</dt>
+                        <dd>
+                            <input type="text" value="桃園市中壢區中北路200號" readonly>
+                        </dd>
+                    </div
+                </dl>
+                <input type="button" class="modify" value="修改資料" onclick="location.href='modify.html'">
             </div>
-            <button>修改資料</button>
-        </div>
+        </div>        
+        
+        <div class="frame">
+            <div class="order">
+                <h2>訂單紀錄</h2>
+                <div class="record">
+                    <button class="accordion">訂單編號:20220101000001</button>
+                    <div class="panel">
+                        <div class="title">
+                            <p>訂單成立時間:2022/01/01</p>
+                            <p>訂單狀態:已取貨</p>
+                        </div>
+                        <div class="ordered">
+                            <div class="beverage">
+                                <p>珍珠奶茶</p>
+                                <p>NT$50x1=50</p>
+                            </div>
+                            <div class="beverage">
+                                <p>星空莓莓</p>
+                                <p>NT$70x1=70</p>
+                            </div>
+                        </div> 
+                        <div class="total">
+                            <p>總計:2杯</p>
+                            <p>總價:總價:NT$120</p>
+                        </div>
+                    </div>
 
-        <div>
+                    <button class="accordion">訂單編號:20220101000001</button>
+                    <div class="panel">
+                        <div class="title">
+                            <p>訂單成立時間:2022/01/01</p>
+                            <p>訂單狀態:已取貨</p>
+                        </div>
+                        <div class="ordered">
+                            <div class="beverage">
+                                <p>珍珠奶茶</p>
+                                <p>NT$50x1=50</p>
+                            </div>
+                            <div class="beverage">
+                                <p>星空莓莓</p>
+                                <p>NT$70x1=70</p>
+                            </div>
+                        </div> 
+                        <div class="total">
+                            <p>總計:2杯</p>
+                            <p>總價:總價:NT$120</p>
+                        </div>
+                    </div>
 
+                    <button class="accordion">訂單編號:20220101000001</button>
+                    <div class="panel">
+                        <div class="title">
+                            <p>訂單成立時間:2022/01/01</p>
+                            <p>訂單狀態:已取貨</p>
+                        </div>
+                        <div class="ordered">
+                            <div class="beverage">
+                                <p>珍珠奶茶</p>
+                                <p>NT$50x1=50</p>
+                            </div>
+                            <div class="beverage">
+                                <p>星空莓莓</p>
+                                <p>NT$70x1=70</p>
+                            </div>
+                        </div> 
+                        <div class="total">
+                            <p>總計:2杯</p>
+                            <p>總價:NT$120</p>
+                        </div>
+                    </div>
+                    <script>
+                        var accordion = document.getElementsByClassName("accordion");
+                        var i;
+                        
+                        for (i = 0; i < accordion.length; i++) {
+                          accordion[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.maxHeight) {
+                              panel.style.maxHeight = null;
+                            } else {
+                              panel.style.maxHeight = panel.scrollHeight + "px";
+                            } 
+                          });
+                        }
+                    </script>
+                </div>
+                
+            </div>
         </div>
     </section>
     
