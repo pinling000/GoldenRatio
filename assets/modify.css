@@ -2,15 +2,15 @@ body{
     margin: 0;
     background-color: #ffefa9;
     font-family:"Comic sans MS", cursive ,sans-serif;
+    font-family: "黑體";
 }
 
 header{
     background-color: #FFD382;
-    padding: 1px;
 }
 
 nav{
-    margin: 25px 225px;
+    margin: 0px 225px;
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -19,7 +19,7 @@ nav{
 }
 
 nav img{
-    width: 250px;
+    width: 180px;
 }
 
 nav ul{
@@ -46,13 +46,106 @@ nav ul li a:hover {
 }
 
 section{
+    margin: 15px 225px;
+}
+
+.frame{
+    border: 3px #FFBF6C dashed;
+    margin: 15px 0;
+}
+
+.content{
+    margin: 20px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
-section .input_field{
+h2{
+    margin: 0;
+    padding: 20px;
+    border-bottom: 3px dotted #ff9d1f;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+
+dl{
+    margin: 15px;
+}
+
+.formfield{
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.formfield dt{
+    width: 100px;
+}
+
+.formfield input{
+    font-size: 18px;
+    border-radius: 3px;
+    border-color: #e1eef5;
+    height: 30px;
+}
+
+.gender{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.address{
+    padding: 30px 0;
+}
+
+.address dd{
+    display: flex;
+
+}
+
+#twzipcode{
+    display: flex;
+}
+
+#twzipcode select{
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.address input{
+    max-width: 790px;
+    width: 623px;
+}
+
+.mail input{
+    width: 166vh;
+    max-width: 790px;
+}
+
+.modify{
+    cursor: pointer;
+    width: 200px;
+    height: 35px;
+    background-color: #ffcb6bc7;
+    border-color: #904E0E;
+    color: #904E0E;
+}
+
+.button{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    text-align: center;
+    color:#904E0E;
+    font-size: 12px;
+    background: #FFD382;
+    padding: 1px;
 }

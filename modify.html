@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/modify.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.14/jquery.twzipcode.min.js"></script>
 </head>
 <body>
     <header>
@@ -24,37 +26,78 @@
     </header>
 
     <section>
-        <div>
-            <h2>會員資料</h2>
-            <div class="input_field">
-                <h3>User name</h3>
-                <input type="text">
+        <div class="frame">
+            <div class="content">
+                <h2>會員資料</h2>
+                <dl>
+                    <div class="item">
+                        <div class="formfield name">
+                            <dt>姓名</dt>
+                            <dd>
+                                <input type="text" value="CYIM">
+                            </dd>
+                        </div>
+    
+                         <div class="formfield birth">
+                            <dt>生日</dt>
+                            <dd>
+                                <input type="text" value="2022/01/01">
+                            </dd>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                       <div class="formfield">
+                            <dt>性別</dt>
+                            <dd class="gender">
+                                <input type="radio" name="gender" value="man" checked>生理男
+    
+                                <input type="radio" name="gender" value="woman">生理女
+                            </dd>
+                        </div>
+    
+                        <div class="formfield tele">
+                            <dt>電話</dt>
+                            <dd>
+                                <input type="text" value="886-3-235-5401">
+                            </dd>
+                        </div>
+                    </div>
+    
+                    <div class="formfield mail">
+                        <dt>電子郵件</dt>
+                        <dd>
+                            <input type="text" value="cyim@gmail.com" >
+                        </dd>
+                    </div>
+    
+                    
+                    <div class="formfield address">
+                        <dt>地址</dt>
+                        <dd>
+                            <div id="twzipcode"></div>
+                            <input type="text" value="中北路200號" >
+                        </dd>
+                        <script>
+                            $("#twzipcode").twzipcode({
+                                zipcodeIntoDistrict: true, // 郵遞區號自動顯示在地區
+                            });
+                        </script>
+                    </div>
+                </dl>
+                <div class="button">
+                    <input type="button" class="modify" value="取消修改" onclick="history.back()">
+                    <input type="button" class="modify" value="確認修改" onclick="location.href='index.html'">
+                </div>
             </div>
-            <div class="input_field">
-                <h3>Password</h3>
-                <input type="password">
-            </div>
-            <div class="input_field">
-                <h3>Birthday</h3>
-                <input type="date">
-            </div>
-            <div class="input_field">
-                <h3>Telephone</h3>
-                <input type="text" name="" id="">
-            </div>
-            <div class="input_field">
-                <h3>E-mail</h3>
-                <input type="text">
-            </div>
-            <div>
-
-            </div>
-            <button>確認修改</button>
-        </div>
-
-        <div>
-
-        </div>
+        </div>       
     </section>
+
+    <footer>
+        <p>服務時間:周一至周五A.M.10:00~P.M.21:30</p>
+        <p>電話:886-3-235-5401</p>
+        <p>地址:320314 桃園市中壢區中北路200號 </p>
+        <p>Copyright © 2021 Golden ratio</p>
+    </footer>
 </body>
 </html>
