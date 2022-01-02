@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(contact.css);
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a class="top" href="">HOME</a></li>
+            <li><a class="top" href="about.html">ABOUT</a></li>
+            <li><a class="top" href="">PRODUCTS</a></li>
+            <li><a class="top" href="">MEMBER</a></li>
+            <li><a class="top" href="login.html">LOGIN</a></li>
+        </ul>
+    </header>
+    
+    <form method="POST" action="mailto:" enctype="text/plain">
+        <div class="title">Contact Us</div><br>
+        <div class="content">
+            Name: <input class="name" type="text" name="name" size="20"><br>
+            <input type="radio" name="sex" value="man" checked>Man
+            <input type="radio" name="sex" value="woman">Woman<br>
+            <textarea class="talk" rows="10" name="words" cols="35" placeholder=" 想說的話"></textarea>
+            <input type="button" value="send">
+        </div>
+    </form>
+</body>
+</html>

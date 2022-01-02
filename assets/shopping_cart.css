@@ -35,6 +35,11 @@ header ul li a:hover{
     color: #FFF7D5;
 }
 
+.member .secondMenu lli:hover>a{
+    background-color: #FFBF6C;
+    color: #FFF7D5;
+}
+
 section{
     margin-left: 250px;
 }
