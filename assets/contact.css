@@ -1,9 +1,17 @@
+html, body{
+    height: 100%;
+}
+
 body{
     background-color: #FFEFA9	;
     font-family:Comic Sans MS;
     overflow-x: hidden;
     margin: 0;
-    height: 100%;
+}
+
+#id wrapper {
+    min-height: 100%;
+    position: relative;
 }
 
 header{
@@ -12,6 +20,7 @@ header{
     align-items: center;
     justify-content: space-around;
     font-family: "黑體";
+    height: 100px;
 }
 
 header img{
@@ -90,7 +99,8 @@ header ul.menu li:hover>ul{
 }
 
 section{
-    margin: 30px 0;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .content{
@@ -154,4 +164,9 @@ footer{
     font-size: 12px;
     background: #FFD382;
     padding: 1px;
+    height: 130px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -3000;
+    width: 100%;
 }

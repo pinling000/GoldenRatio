@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+        @import url(assets/product.css);
+        @import url(assets/test.css);
+        h1{
+            font-family: DFKai-SB;
+        }
+        .coco{
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        var x=1;
+        function changeimg(){
+            x++;
+            var change=document.getElementById("pic1");
+            change.src="images/i-"+x+".jpg"
+            if(x==2){
+                x=0;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="index.html"><img src="image/logo.png" alt=""></a>
+            <ul class="menu">
+                <li><a href="">ABOUT</a></li>
+                <li>
+                    <a href="AllProducts.html">PRODUCTS</a>
+                    <ul class="second">
+                        <li><a href="AllProducts.html">全部商品</a></li>
+                        <li><a href="PopularProducts.html">人氣</a></li>
+                        <li><a href="classic.html">茶</a></li>
+                        <li><a href="MilkTea.html">奶茶</a></li>
+                        <li><a href="FruitTea.html">水果</a></li>
+                        <li><a href="season.html">季節</a></li>
+                    </ul>
+                </li>
+                <li><a href="">CONTACT</a></li>
+                <li>
+                    <a href="login.html"><i class="fas fa-user"></i></a>
+                    <ul class="second">
+                        <li><a href="login.html">登入</a></li>
+                        <li><a href="member.html">會員中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="shopping_cart2.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </header>
+        <section>
+            <div class="product">
+                <div >
+                    <img id="pic1" src="image/matcha.jpg" onclick="changeimg()">
+                </div>
+                <h1 class="title"><img class="coco" src="image/4.png"> 可不可熟成紅茶</h1><br>
+                <h2>派森末茶</h2><br><br>
+                <p class="money">NT:65</p>
+                <form method="POST" action="">
+                    <input type="number" name="num" value="1" min="1">
+                    <input class="add" type="button" value="Add to car">
+                    <input class="heart" type="button" value="♡"><br>
+                    <input class="buy" type="button" value="Buy it now">
+                </form>
+                <br>
+                <div class="contant">
+                    <h3 class="intro"><img  class="box" src="image/5.jpg"><img class="box2" src="image/6.jpg"> 產品介紹</h3>
+                    <hr color="#805300" align="left" size="1" width="55%"><br>
+                    <p class="intro2">將靜岡抹茶搭上酸酸甜甜的百香果蒟蒻，<br>
+                        嘗得到果香芬芳與冬瓜香氣，嘗起來清涼爽口<br>，而Q彈嚼勁也成功收服料控的心。</p>
+                </div>
+                
+            </div>
+
+            <div class="b">
+                <hr color="#805300" align="middle" size="2"><br>
+                <p class="comment">Comment</p>
+                <form method="POST" action="">
+                    <div class="ans">
+                        Name <input class="name" type="text" size="25"><br><br>
+                        <div class="cont">
+                            <div class="stars">
+                              <input class="star star-5" id="star-5-2" type="radio" name="star"/>
+                              <label class="star star-5" for="star-5-2"></label>
+                              <input class="star star-4" id="star-4-2" type="radio" name="star"/>
+                              <label class="star star-4" for="star-4-2"></label>
+                              <input class="star star-3" id="star-3-2" type="radio" name="star"/>
+                              <label class="star star-3" for="star-3-2"></label>
+                              <input class="star star-2" id="star-2-2" type="radio" name="star"/>
+                              <label class="star star-2" for="star-2-2"></label>
+                              <input class="star star-1" id="star-1-2" type="radio" name="star"/>
+                              <label class="star star-1" for="star-1-2"></label>
+                              <div class="rev-box">
+                                <textarea class="review" col="30" name="review"></textarea>
+                                <label class="review" for="review"></label>
+                              </div>
+                            
+                            </div>
+                            </div>
+                        <input class="button" type="button" value="Send">
+                </div>
+                </form>
+                <br>
+                <form class="acc" method="POST" action="">
+    
+                </form>
+            </div>
+        </section>
+        
+        
+
+        <footer>
+            <p>服務時間:周一至周五A.M.10:00~P.M.21:30</p>
+            <p>電話:886-3-235-5401</p>
+            <p>地址:320314 桃園市中壢區中北路200號 </p>
+            <p>Copyright © 2021 Golden ratio</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
