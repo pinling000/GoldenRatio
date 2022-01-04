@@ -51,118 +51,126 @@
     </script>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="image/logo.png" alt=""></a>
-        <ul class="menu">
-            <li><a href="">ABOUT</a></li>
-            <li>
-                <a href="AllProducts.html">PRODUCTS</a>
-                <ul class="second">
-                    <li><a href="AllProducts.html">全部商品</a></li>
-                    <li><a href="PopularProducts.html">人氣</a></li>
-                    <li><a href="classic.html">茶</a></li>
-                    <li><a href="MilkTea.html">奶茶</a></li>
-                    <li><a href="FruitTea.html">水果</a></li>
-                    <li><a href="season.html">季節</a></li>
-                </ul>
-            </li>
-            <li><a href="">CONTACT</a></li>
-            <li>
-                <a href="login.html"><i class="fas fa-user"></i></a>
-                <ul class="second">
-                    <li><a href="login.html">登入</a></li>
-                    <li><a href="member.html">會員中心</a></li>
-                </ul>
-            </li>
-            <li><a href="shopping_cart2.html"><i class="fas fa-shopping-cart"></i></a></li>
-        </ul>
-    </header>
-
-    <section>
-        <div class="cart">
-            <table>
-                <tr>
-                    <th>
-                        <input type="checkbox" name="liCheck" id="checkAll" value="">
-                    </th>
-                    <th>Product</th>
-                    <th>Quatity</th>
-                    <th>Subtotal</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td>
-                           <input type="checkbox" name="liCheck" id="" value="">
-                    </td>
-                    <td>
-                        <div class="infor">
-                            <img src="image/passionfruit.png" alt="">
+    <div id="wrapper">
+        <header>
+            <a href="index.html"><img src="image/logo.png" alt=""></a>
+            <ul class="menu">
+                <li><a href="">ABOUT</a></li>
+                <li>
+                    <a href="AllProducts.html">PRODUCTS</a>
+                    <ul class="second">
+                        <li><a href="AllProducts.html">全部商品</a></li>
+                        <li><a href="PopularProducts.html">人氣</a></li>
+                        <li><a href="classic.html">茶</a></li>
+                        <li><a href="MilkTea.html">奶茶</a></li>
+                        <li><a href="FruitTea.html">水果</a></li>
+                        <li><a href="season.html">季節</a></li>
+                    </ul>
+                </li>
+                <li><a href="">CONTACT</a></li>
+                <li>
+                    <a href="login.html"><i class="fas fa-user"></i></a>
+                    <ul class="second">
+                        <li><a href="login.html">登入</a></li>
+                        <li><a href="member.html">會員中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="shopping_cart2.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </header>
+    
+        <section>
+            <div class="cart">
+                <table>
+                    <tr>
+                        <th>
+                            <input type="checkbox" name="liCheck" id="checkAll" value="">
+                        </th>
+                        <th>Product</th>
+                        <th>Quatity</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>
+                               <input type="checkbox" name="liCheck" id="" value="">
+                        </td>
+                        <td>
+                            <div class="infor">
+                                <img src="image/matcha-removebg-preview.png" alt="">
+                                <div>
+                                    <h4>派森末茶</h4>
+                                    <p>price:$ <span class="price">50</span></p>
+                                </div>
+                            </div>                       
+                        </td>
+                        <td>
                             <div>
-                                <h4>百香雙響炮</h4>
-                                <p>price:$ <span class="price">50</span></p>
+                                <input class="count" id="number" type="number" value="1">
                             </div>
-                        </div>                       
-                    </td>
-                    <td>
-                        <div>
-                            <input class="count" id="number" type="number" value="1">
-                        </div>
-                    </td>
-                    <td>NT$<span class="subTotal"> 50</span></td>
-                    <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
-                </tr>
+                        </td>
+                        <td>NT$<span class="subTotal"> 50</span></td>
+                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="liCheck" id="" value="">
+                        </td>
+                        <td>
+                            <div class="infor">
+                                <img src="image/strawberry-removebg-preview.png" alt="">
+                                <div>
+                                    <h4>星空莓莓</h4>
+                                    <p>price:NT$ 65</p>
+                                </div>
+                            </div>                       
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>NT$ 65</td>
+                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="liCheck" id="check" value="">
+                        </td>
+                        <td>
+                            <div class="infor">
+                                <img src="image/3Q-removebg-preview.png" alt="">
+                                <div>
+                                    <h4>3Q奶茶</h4>
+                                    <p>price:NT$ 50</p>
+                                </div>
+                            </div>                       
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>NT$ 50</td>
+                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                    </tr>
+                </table>
+                <hr>
 
-                <tr>
-                    <td>
-                        <input type="checkbox" name="liCheck" id="" value="">
-                    </td>
-                    <td>
-                        <div class="infor">
-                            <img src="image/starstrawberry.png" alt="">
-                            <div>
-                                <h4>星空莓莓</h4>
-                                <p>price:NT$ 65</p>
-                            </div>
-                        </div>                       
-                    </td>
-                    <td><input type="number" value="1"></td>
-                    <td>NT$ 65</td>
-                    <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
-                </tr>
+                <div class="check">
+                    <div class="total">
+                        <p>Total: NT$</p>
+                        <h4>165</h4><br> <br>  
+                    </div>
 
-                <tr>
-                    <td>
-                        <input type="checkbox" name="liCheck" id="check" value="">
-                    </td>
-                    <td>
-                        <div class="infor">
-                            <img src="image/bubbletea.png" alt="">
-                            <div>
-                                <h4>珍珠奶茶</h4>
-                                <p>price:NT$ 50</p>
-                            </div>
-                        </div>                       
-                    </td>
-                    <td><input type="number" value="1"></td>
-                    <td>NT$ 50</td>
-                    <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
-                </tr>
-            </table>
-            <hr>
-
-            <div class="total">
-                <p>Total: NT$</p>
-                <h4>165</h4>
+                    <div class="button">
+                        <input type="button" class="checkout" value="結帳去!!!" onclick="location.href='checkout.html'">
+                    </div>
+                </div>
                 
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>服務時間:周一至周五A.M.10:00~P.M.21:30</p>
-        <p>電話:886-3-235-5401</p>
-        <p>地址:320314 桃園市中壢區中北路200號 </p>
-        <p>Copyright © 2021 Golden ratio</p>
-    </footer>
+        </section>
+    
+        <footer>
+            <p>服務時間:周一至周五A.M.10:00~P.M.21:30</p>
+            <p>電話:886-3-235-5401</p>
+            <p>地址:320314 桃園市中壢區中北路200號 </p>
+            <p>Copyright © 2021 Golden ratio</p>
+        </footer>
+    </div>
 </body>
 </html>

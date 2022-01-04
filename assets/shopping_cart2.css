@@ -1,8 +1,17 @@
+html, body{
+    height: 100%;
+}
+
 body{
-    margin: 0;
-    background-color: #ffefa9;
-    font-family:"Comic sans MS", cursive ,sans-serif;
+    background-color: #FFEFA9	;
     font-family: "黑體";
+    overflow-x: hidden;
+    margin: 0;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
 }
 
 header{
@@ -10,6 +19,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-family: "黑體";
+    height: 100px;
 }
 
 header img{
@@ -89,6 +100,8 @@ header ul.menu li:hover>ul{
 
 section{
    margin: 10px 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .cart{
@@ -138,10 +151,30 @@ td a:hover{
     justify-content: flex-end;
 }
 
+.check{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.checkout{
+    cursor: pointer;
+    width: 200px;
+    height: 35px;
+    background-color: #ffcb6bc7;
+    border-color: #904E0E;
+    color: #904E0E;
+}
+
 footer{
     text-align: center;
     color:#904E0E;
     font-size: 12px;
     background: #FFD382;
     padding: 1px;
+    height: 130px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -3000;
+    width: 100%;
 }
