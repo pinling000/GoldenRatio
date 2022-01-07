@@ -1,18 +1,10 @@
 
-*{
-  margin: 0;
-  padding: 0;
-  font-family: Comic Sans MS;
-}
-
-
 .cont{
-  width: 93%;
-  max-width: 350px;
+  width: 100%;
+  max-width: 1000px;
   text-align: center;
-  margin-left: -35px;
   color: #855600;
-  overflow: hidden;
+  margin-left: 20px;
 }
 
 
@@ -61,16 +53,15 @@ label.star:before{
 .rev-box{
   overflow: hidden;
   height: 0;
-  width: 100%;
+  width: 750px;
   transition: all .25s;
 }
 
 textarea.review{
   background: white;
   border: none;
-  width: 100%;
-  max-width: 100%;
-  height: 100px;
+  width: 755px;
+  height: 75px;
   padding: 10px;
   box-sizing: border-box;
   color: #BD7B00;
@@ -82,9 +73,33 @@ label.review{
   transition:opacity .25s;
 }
 
-
-
 input.star:checked ~ .rev-box{
   height: 125px;
   overflow: visible;
+}
+
+.button{
+  margin: 10px;
+  display: block;
+}
+
+.other{
+  border: #855600 2px dashed;
+  border-radius: 20px;
+}
+
+.frame{
+  margin: 10px  15%;
+}
+
+.words{
+  background: white;
+  border: none;
+  width: 755px;
+  height: 75px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #BD7B00;
+  border-radius: 10px;
+  margin-left: 30px;
 }

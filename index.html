@@ -12,19 +12,19 @@
     <header>
         <a href="index.html"><img src="image/logo.png" alt=""></a>
         <ul class="menu">
-            <li><a href="">ABOUT</a></li>
             <li>
                 <a href="AllProducts.html">PRODUCTS</a>
                 <ul class="second">
                     <li><a href="AllProducts.html">全部商品</a></li>
-                    <li><a href="PopularProducts.html">人氣</a></li>
-                    <li><a href="classic.html">茶</a></li>
-                    <li><a href="MilkTea.html">奶茶</a></li>
-                    <li><a href="FruitTea.html">水果</a></li>
-                    <li><a href="season.html">季節</a></li>
+                    <li><a href="PopularProducts.html">人氣飲品</a></li>
+                    <li><a href="classic.html">經典茶飲</a></li>
+                    <li><a href="MilkTea.html">奶茶系列</a></li>
+                    <li><a href="FruitTea.html">鮮果特調</a></li>
+                    <li><a href="season.html">季節限定</a></li>
                 </ul>
             </li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
             <li>
                 <a href="login.html"><i class="fas fa-user"></i></a>
                 <ul class="second">
@@ -40,15 +40,15 @@
         <div class="slideWindow">
             <div class="slideshow-container">
                 <div class="slides fade">
-                    <img src="image/drinks1.jpg">
+                    <a href="index.html"><img src="image/slide1.png"></a>
                 </div>
                   
                 <div class="slides fade">
-                    <img src="image/drinks2.jpg">
+                    <a href="AllProducts.html"><img src="image/slide2.png"></a>
                 </div>
                   
                 <div class="slides fade">
-                    <img src="image/drinks3.jpg">
+                    <a href="season.html"><img src="image/slide3.png"></a>
                 </div>
             </div>
                   
@@ -82,7 +82,11 @@
     
                     slides[slideIndex-1].style.display = "block";  
                     dots[slideIndex-1].className += " active";
-                    setTimeout(showSlides, 5000); 
+                    setTimeout(showSlides, 4000); 
+                }
+
+                function dot1(){
+                    slideIndex=0;
                 }
             </script>
         </div>
@@ -93,27 +97,31 @@
             <div class="product">
                 <a href="moucha.html"><img src="image/matcha-removebg-preview.png" alt=""></a>
                 <div class="intro">
+                    <h2 class="first"><i class="fas fa-crown"></i> 銷售冠軍 <i class="fas fa-crown"></i></h3>
                     <a href="moucha.html"><h3>派森末茶</h3></a>
-                    <p>-季節限定-</p>
+                    <a href="season.html"><p>-季節限定-</p></a>
                     <p>當靜岡抹茶配上酸甜馥郁的百香果蒟蒻，熟果的芬芳與冬瓜香氣，自厚濃的抹茶味中化為一道清香覺醒的脈絡，滑順香甜的氣息與Q彈嚼感，為一大味覺提點。奔放鮮明的色彩，如同「派森」直率熱情的性格，勇於表達真實自我。</p>
                 </div>
             </div>
 
-            <div class="product second">
+            <div class="product">
+                <a href="product.html"><img src="image/strawberry-removebg-preview.png" alt=""></a>
                 <div class="intro">
+                    <h2 class="second"><i class="fas fa-medal"></i>人氣排行第二名<i class="fas fa-medal"></i></h2>
                     <a href="product.html"><h3>星空莓莓</h3></a>
-                    <a href="product.html"><p>-季節限定-</p></a>
+                    <a href="season.html"><p>-季節限定-</p></a>
                     <p>選用黃金比例的草莓及蔓越莓手工熬煮成莓果醬，搭配白桃莓果冰沙、莓果粒及波波晶球增添口感，融入芝士奶蓋後，鹹香濃郁的滋味，創造出多層次的口感，喜歡「浮誇華麗的貴公子」的少女們準備開喝星空手搖杯吧！</p>
                 </div>
-                <img src="image/strawberry-removebg-preview.png" alt="">
+                
             </div>
 
             <div class="product">
-                <a href=""><img src="image/3Q-removebg-preview.png" alt=""></a>
-                <a href=""><div class="intro"></a>
-                    <h3>3Q奶茶</h3>
-                    <p>-奶茶-</p>
-                    <p>地瓜圓及芋圓是選用台農66號紅心地瓜及檳榔心芋製作而成，透過每日新鮮現煮芋圓、地瓜圓配料，創造出Q彈口感外，並且保留了芋頭、地瓜香氣，每咬一口都可感受新鮮原味，香甜Q彈有嚼勁的口感，不管是要喝冰涼的還是喝溫熱的，都可滿足你的需求，珍珠般大小的芋圓和地瓜圓顆粒，伴隨奶茶入口，嚼上千遍也不厭倦，結合經典奶茶或鮮奶茶甜而不膩的美味，堪稱是秋冬手搖飲的絕佳飽足搭配/p>
+                <a href="MilkTea.html"><img src="image/3Q-removebg-preview.png" alt=""></a>
+                <a href="3q.html"><div class="intro"></a>
+                    <h2 class="third"><i class="fas fa-medal"></i>人氣排行第三名<i class="fas fa-medal"></i></h2>
+                    <a href="3q.html"><h3>3Q奶茶</h3></a>
+                    <a href="MilkTea.html"><p>-奶茶系列-</p></a>
+                    <p>地瓜圓及芋圓是選用台農66號紅心地瓜及檳榔心芋製作而成，透過每日新鮮現煮芋圓、地瓜圓配料，創造出Q彈口感外，並且保留了芋頭、地瓜香氣，每咬一口都可感受新鮮原味，香甜Q彈有嚼勁的口感，不管是要喝冰涼的還是喝溫熱的，都可滿足你的需求，珍珠般大小的芋圓和地瓜圓顆粒，伴隨奶茶入口，嚼上千遍也不厭倦，結合經典奶茶或鮮奶茶甜而不膩的美味，堪稱是秋冬手搖飲的絕佳飽足搭配</p>
                 </div>
             </div>
 

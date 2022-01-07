@@ -102,118 +102,56 @@ header ul.menu li:hover>ul{
     margin-top: 30px;
 }
 
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .pic1{
-    width: 150px;
-    margin-left: 25px;
-    vertical-align: middle;
+    width: 200px;
 }
 
-.box1{
+.box{
     background: #FFF8D7;
-    margin-left: 130px;
-    width: 300px;
-    height: 350px;
     border-radius: 10px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 20px;
+    width: 15%;
+    height: 410px;
+}   
 
-.box2{
-    background: #FFF8D7;
-    margin-left: 465px;
-    margin-top: -350px;
-    width: 300px;
-    height: 350px;
-    border-radius: 10px;
-}
-
-.box3{
-    background: #FFF8D7;
-    margin-left: 800px;
-    margin-top: -350px;
-    width: 300px;
-    height: 350px;
-    border-radius: 10px;
-}
-
-.box4{
-    background: #FFF8D7;
-    margin-left: 310px;
-    margin-top: 45px;
-    width: 300px;
-    height: 350px;
-    border-radius: 10px;
-}
-
-.box5{
-    background: #FFF8D7;
-    margin-left: 640px;
-    margin-top: -350px;
-    width: 300px;
-    height: 350px;
-    border-radius: 10px;
-}
-
-.fb1{
+.fb{
     width: 40px;
     border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 20px;
+    margin: 5px;
 }
 
-.fb2{
+.ig{
     width: 40px;
     border-radius: 10px;
-    margin-top: 80px;
-    margin-left: 20px;
+    margin: 5px;
 }
 
-.ig1{
-    width: 40px;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 15px;
-}
-
-.ig2{
-    width: 40px;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 15px;
-}
-
-.name1{
-    margin-left: 20px;
+.box span{
     font-family: DFKai-sb;
     font-size: 25px;
     font-weight: bold;
+    margin: 10px 0;
 }
 
-.box1:hover{
+.box:hover{
     transform:scale(1.1,1.1);
     transition: 1s;
 }
 
-.box2:hover{
-    transform:scale(1.1,1.1);
-    transition: 1s;
-}
-
-.box3:hover{
-    transform:scale(1.1,1.1);
-    transition: 1s;
-}
-
-.box4:hover{
-    transform:scale(1.1,1.1);
-    transition: 1s;
-}
-
-.box5:hover{
-    transform:scale(1.1,1.1);
-    transition: 1s;
-}
-
-.line{
-    color: #904E0E;
+.member{
+    border-bottom: #904E0E 3px dashed;
+    margin: 0 35px;
 }
 
 .t{
@@ -223,6 +161,37 @@ header ul.menu li:hover>ul{
     color: #904E0E;
     font-family: DFKai-sb;
 }
+
+.start{
+    display: flex;
+    align-items: center;
+    margin: 0 10%;
+    background: #FFFFCE;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.start img{
+    width: 400px;
+    opacity: 0.3;
+}
+
+.start img:hover{
+    transition: .7s;
+    opacity: 1;
+}
+
+.start p{
+   margin: 0 30px;
+   font-size: 20px;
+   font-family: DFKai-sb;
+   opacity: .7;
+}
+
+.start p:hover{
+    transition: .3s;
+    opacity: 1;
+ }
 
 .s{
     text-align: center;
@@ -240,8 +209,6 @@ header ul.menu li:hover>ul{
 .logo{
     width: 1000px;
     height: 340px;
-    position: absolute;
-    z-index: 1;
     margin-left: -76px;
     margin-top: -96px;
     border-radius: 15px;

@@ -34,19 +34,19 @@
         <header>
             <a href="index.html"><img src="image/logo.png" alt=""></a>
             <ul class="menu">
-                <li><a href="">ABOUT</a></li>
                 <li>
                     <a href="AllProducts.html">PRODUCTS</a>
                     <ul class="second">
                         <li><a href="AllProducts.html">全部商品</a></li>
-                        <li><a href="PopularProducts.html">人氣</a></li>
-                        <li><a href="classic.html">茶</a></li>
-                        <li><a href="MilkTea.html">奶茶</a></li>
-                        <li><a href="FruitTea.html">水果</a></li>
-                        <li><a href="season.html">季節</a></li>
+                        <li><a href="PopularProducts.html">人氣飲品</a></li>
+                        <li><a href="classic.html">經典茶飲</a></li>
+                        <li><a href="MilkTea.html">奶茶系列</a></li>
+                        <li><a href="FruitTea.html">鮮果特調</a></li>
+                        <li><a href="season.html">季節限定</a></li>
                     </ul>
                 </li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
                 <li>
                     <a href="login.html"><i class="fas fa-user"></i></a>
                     <ul class="second">
@@ -62,34 +62,37 @@
                 <div >
                     <img id="pic1" src="image/toffee.jpg" onclick="changeimg()">
                 </div>
-                <h1 class="title"><img class="coco" src="image/2.png"> 清心福全</h1><br>
-                <h2>太妃鴛鴦奶茶</h2><br><br>
-                <p class="money">NT:70</p>
-                <form method="POST" action="">
-                    <input type="number" name="num" value="1" min="1">
-                    <input class="add" type="button" value="Add to car">
-                    <input class="heart" type="button" value="♡"><br>
-                    <input class="buy" type="button" value="Buy it now">
-                </form>
-                <br>
-                <div class="contant">
-                    <h3 class="intro"><img  class="box" src="image/5.jpg"><img class="box2" src="image/6.jpg"> 產品介紹</h3>
-                    <hr color="#805300" align="left" size="1" width="55%"><br>
-                    <p class="intro2">錫蘭奶茶溶入太妃糖風味的咖啡，清雅又厚實<br>
-                        的錫蘭紅茶與醇厚的咖啡匯聚成誘人美味，<br>
-                        更有絲絲的奶香與太妃糖香味流貫其間，香甜濃醇、<br>
-                        絲滑豐潤的頂級口感無以復加。<br>
+                <div class="detail">
+                    <div class="name">
+                        <h2>太妃鴛鴦奶茶</h2>
+                        <input class="heart" type="button" value="♡">
+                    </div>
+                    <p class="money">L:NT:70</p>
+                    <input class="select" type="number" name="num" value="1" min="1">
+                    <div class="btn">
+                        <input type="button" value="Add to car">
+                        <input type="button" value="Buy it now" onclick="location.href='checkout.html'">
+                    </div>
+                    <br>
+                    <div class="contant">
+                        <h3 class="intro"><img  class="box" src="image/5.jpg"><img class="box2" src="image/6.jpg"> 產品介紹</h3>
+                        <hr color="#805300" align="left" size="1" width="55%"><br>
+                        <p class="intro2">
+                            錫蘭奶茶溶入太妃糖風味的咖啡，清雅又厚實的錫蘭紅茶與醇厚的咖啡匯聚成誘人美味，更有絲絲的奶香與太妃糖香味流貫其間，香甜濃醇、<br>
+                            絲滑豐潤的頂級口感無以復加。
                         </p>
+                    </div>
                 </div>
-                
             </div>
 
-            <div class="b">
-                <hr color="#805300" align="middle" size="2"><br>
-                <p class="comment">Comment</p>
-                <form method="POST" action="">
-                    <div class="ans">
-                        Name <input class="name" type="text" size="25"><br><br>
+            <div class="frame">
+                <p class="title">Comment</p>
+                <div class="comment">
+                    <div class="user">
+                        <img src="image/photo.jpg" alt="">
+                        <p>xxxxxxx</p>
+                    </div>
+                    <div class="score">
                         <div class="cont">
                             <div class="stars">
                               <input class="star star-5" id="star-5-2" type="radio" name="star"/>
@@ -104,19 +107,37 @@
                               <label class="star star-1" for="star-1-2"></label>
                               <div class="rev-box">
                                 <textarea class="review" col="30" name="review"></textarea>
+                                <input class="button" type="button" value="Send">
                                 <label class="review" for="review"></label>
                               </div>
-                            
                             </div>
-                            </div>
-                        <input class="button" type="button" value="Send">
+                        </div>
+                    </div>
                 </div>
-                </form>
-                <br>
-                <form class="acc" method="POST" action="">
+
+                <div class="other">
+                    <div class="comment">
+                        <div class="user">
+                            <img src="image/may.jfif" alt="">
+                            <p>May</p>
+                        </div>
+                        <div>
+                            <textarea class="words" col="30" name="review" readonly>比想像中的還要驚豔</textarea>
+                        </div>
+                    </div>
     
-                </form>
+                    <div class="comment">
+                        <div class="user">
+                            <img src="image/duffy.jfif" alt="">
+                            <p>Tuffy</p>
+                        </div>
+                        <div>
+                            <textarea class="words" col="30" name="review" readonly>很好喝!</textarea>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </section>
         
         

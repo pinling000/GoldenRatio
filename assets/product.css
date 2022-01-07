@@ -4,12 +4,12 @@ html, body{
 
 body{
     background-color: #FFEFA9	;
-    font-family:Comic Sans MS;
+    font-family:"黑體";
     overflow-x: hidden;
     margin: 0;
 }
 
-#id wrapper {
+#wrapper {
     min-height: 100%;
     position: relative;
 }
@@ -118,40 +118,19 @@ h2{
     
 }
 
-.money{
-    color: #904E0E;
-}
-
-.product{
-    columns: 2;
-    margin: 20px;
-    margin-top: 30px;
-    min-height: 100%;
-    padding-top:50px;
-    padding-bottom:50px;
-}
-
 #pic1{
     width: 350px;
     margin: 20px;
-    margin-left: 5cm;
     border-radius: 15px;
 }
 
-.coco{
-    width: 40px;
-    border-radius: 50%;
-    vertical-align: middle;
+.detail{
+    width: 33%;
 }
 
-
-.add{
-    background: #FFE1AB;
-    height: 25px; 
-    width: 90px;
-    border-radius: 5px;
-    color:#8F5D00;
-    font-weight: bold;
+.name{
+    display: flex;
+    align-items: center;
 }
 
 .heart{
@@ -161,16 +140,42 @@ h2{
     width: 25px;
     border-radius: 5px;
     font-weight: bold;
+    margin-left: 20px;
 }
 
-.buy{
-    background: #FFDA96	;
-    width: 8.5cm;
-    height: 40px;
+.money{
+    color: #904E0E;
+    margin: 10px 0;
+
+    font-size: 20px;
+}
+
+.select{
+    margin: 10px 0;
+    width: 55%;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    border-bottom: #904E0E 3px solid;
+    margin: 0 35px;
+}
+
+.btn{
+    margin: 10px 0;
+}
+
+.btn input{
+    background: #FFE1AB;
+    height: 30px; 
+    width: 140px;
     border-radius: 5px;
-    margin-top: 10px;
-    color: #8F5D00;
+    color:#8F5D00;
     font-weight: bold;
+    font-size: 15px;
 }
 
 .intro{
@@ -181,6 +186,7 @@ h2{
 .intro2{
     color: #B87800;
     font-family:DFKai-SB ;
+    font-size: 18px;
 }
 
 footer{
@@ -189,23 +195,36 @@ footer{
     font-size: 12px;
     background: #FFD382;
     padding: 10px;
-    height: 85px;
+    height: 130px;
     box-sizing: border-box;
     position: absolute;
     bottom: -3000;
     width: 100%;
 }
 
-.b{
+.title{
     font-family:Comic Sans MS;
     color:#904E0E;
     font-size: 25px;
-    margin: 55px;
+    text-align: center;
 }
 
 .comment{
-    margin-left: 5.5cm;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 35px 5%;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user img{
+    width: 125px;
+    height: 125px;
 }
 
 a,a:link,a:visited{

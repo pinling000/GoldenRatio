@@ -162,6 +162,11 @@ section .products{
     height: 200px;
 }
 
+.column img:hover{
+    transition: .5s;
+    transform: scale(1.2);
+}
+
 .column p{
     margin: 6px;
 }
