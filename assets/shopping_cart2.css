@@ -100,8 +100,8 @@ header ul.menu li:hover>ul{
 
 section{
    margin: 10px 250px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    margin-bottom: 120px;
 }
 
 .cart{
@@ -142,8 +142,7 @@ td a:hover{
 }
 
 .infor img{
-    width: 100px;
-    height: 80px;
+    width: 130px;
     padding-right: 10px;
 }
 

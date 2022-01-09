@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.14/jquery.twzipcode.min.js"></script>
+    <script>
+        function fun(){
+            alert("修改成功");
+            location.href='index.html';
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -100,7 +106,7 @@
                 </dl>
                 <div class="button">
                     <input type="button" class="modify" value="取消修改" onclick="history.back()">
-                    <input type="button" class="modify" value="確認修改" onclick="location.href='index.html'">
+                    <input type="button" class="modify" value="確認修改" onclick="fun()">
                 </div>
             </div>
         </div>       

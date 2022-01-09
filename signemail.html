@@ -21,25 +21,60 @@
             }
             return check;
         }
+
+        function sign(){
+            let name=document.getElementById("name").value;
+            let email=document.getElementById("email").value;
+            let password=document.getElementById("password").value;
+            let phone=document.getElementById("phone").value;
+
+            if(name==""){
+                alert("姓名欄尚未填寫")
+                return false;
+            }
+            if(email==""){
+                alert("電子郵件尚未填寫")
+                return false;
+            }
+            if(password==""){
+                alert("密碼欄尚未填寫")
+                return false;
+            }
+            if(password.length<6){
+                alert("密碼需大於6個字符")
+                return false;
+            }
+            if(phone==""){
+                alert("電話欄尚未填寫")
+                return false;
+            }
+
+            else{
+                alert("會員註冊成功");
+                location.href='login.html';
+            }
+        }
+        
+        
     </script>
 </head>
 <body>   
     <header>
         <a href="index.html"><img src="image/logo.png" alt=""></a>
         <ul class="menu">
-            <li><a href="">ABOUT</a></li>
             <li>
                 <a href="AllProducts.html">PRODUCTS</a>
                 <ul class="second">
                     <li><a href="AllProducts.html">全部商品</a></li>
-                    <li><a href="PopularProducts.html">人氣</a></li>
-                    <li><a href="classic.html">茶</a></li>
-                    <li><a href="MilkTea.html">奶茶</a></li>
-                    <li><a href="FruitTea.html">水果</a></li>
-                    <li><a href="season.html">季節</a></li>
+                    <li><a href="PopularProducts.html">人氣飲品</a></li>
+                    <li><a href="classic.html">經典茶飲</a></li>
+                    <li><a href="MilkTea.html">奶茶系列</a></li>
+                    <li><a href="FruitTea.html">鮮果特調</a></li>
+                    <li><a href="season.html">季節限定</a></li>
                 </ul>
             </li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
             <li>
                 <a href="login.html"><i class="fas fa-user"></i></a>
                 <ul class="second">
@@ -55,24 +90,24 @@
     <div class="container">
         <div class="item frame">
             <div class="title">Sign Up with Email</div>
-            <form method="post" action="">
+            <form name="myform" method="post" action="">
                 <div class="input_field">
                     <i class="fas fa-user"></i>
-                    <input class="name" type="text" name="name"  placeholder="Username">
+                    <input class="name" type="text" name="name" id="name" placeholder="Username">
                 </div>
                 <div class="input_field">
                     <i class="fas fa-envelope"></i>
-                    <input class="name1" type="text" name="email" placeholder="xxx@gmail.com">
+                    <input class="name1" type="text" name="email" id="email" placeholder="xxx@gmail.com">
                 </div>
                 <div class="input_field">
                     <i class="fas fa-lock"></i>
-                    <input id="password" type="password" name="password" placeholder="••••••••••••••" onclick="checkpassword()"><br>
+                    <input id="password" type="password" name="password"  placeholder="••••••••••••••" onclick="checkpassword()"><br>
                 </div>    
                     <span id="check"></span>
 
                 <div class="input_field">
                     <i class="fas fa-phone"></i>
-                    <input class="name" type="text" name="name" placeholder="xxxx-xxx-xxx">
+                    <input class="name" type="text" name="name" id="phone" placeholder="xxxx-xxx-xxx">
                 </div>
                 <div class="input_field gender">
                     <div class="male">
@@ -86,9 +121,9 @@
                     </div>
                 </div>
                 <div class="input_field">
-                    <input class="date" type="date" name="bir">
+                    <input class="date" type="date"  name="bir">
                 </div> 
-                <input id="btn" type="button" value="Sign Up">
+                <input id="btn" type="button" value="Sign Up" onclick="sign()">
             </form>  
         </div>
 
