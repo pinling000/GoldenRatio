@@ -7,6 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/checkout.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script>
+        function fun(){
+            alert("訂購完成，門市正在製作您的餐點");
+            location.href='index.html';
+        }
+    </script>
 </head>
 <body>
     <div id="wrapper">
@@ -77,7 +83,7 @@
                     </div>
 
                     <div class="button">
-                        <input type="button" class="checkout" value="送出訂單" onclick="location.href='checkout.html'">
+                        <input type="button" class="checkout" value="送出訂單" onclick="fun()">
                     </div>
                 </div>
             </div>

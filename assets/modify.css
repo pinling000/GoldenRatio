@@ -89,6 +89,8 @@ header ul.menu li:hover>ul{
 
 section{
     margin: 15px 225px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .frame{
